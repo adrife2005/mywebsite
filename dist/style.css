@@ -18,14 +18,25 @@ body::before {
     height: 70px;
 }
 
-img {
+#About img{
     width: 100%;
     height: 100%;
     transition: 0.5s;
     object-fit: cover;
 }
 
-img:hover {
+#About img:hover {
+    transform: scale(.8);
+}
+
+#Skills img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+#Skills img:hover {
     transform: scale(.8);
 }
 
