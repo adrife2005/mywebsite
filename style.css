@@ -12,6 +12,16 @@ body {
     background-color: indigo;
 }
 
+.nav-item a{
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #3498db;
+  }
+
 body::before {
     display: block;
     content: '';
@@ -53,6 +63,28 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.p_1{
+    padding-bottom: 10px;
+    border: solid 1px whitesmoke;
+    padding: 30px;
+    animation: cambiaColor 3s infinite;
+}
+
+@keyframes cambiaColor {
+  0% {
+    border-color: #3498db; 
+  }
+  25% {
+    border-color: red;
+  }
+  50% {
+    border-color: #e74c3c; 
+  }
+  100% {
+    border-color: #3498db; 
+  }
+}
+
 .span_1 {
     animation: changeColor 3s infinite;
 }
@@ -79,3 +111,11 @@ h1 {
     }
 }
 
+li a{
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover{
+    color: black;
+}
