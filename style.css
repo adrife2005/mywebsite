@@ -18,14 +18,64 @@ body::before {
     height: 70px;
 }
 
-img {
+#About img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+} 
+
+#About img:hover {
+    transform: scale(.8);
+} 
+
+#Skills img{
     width: 100%;
     height: 100%;
     transition: 0.5s;
     object-fit: cover;
 }
 
-img:hover {
+#Skills img:hover {
     transform: scale(.8);
+}
+
+#Home {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 200%;
+}
+
+#About {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.span_1 {
+    animation: changeColor 3s infinite;
+}
+
+.span_0 {
+    animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: orange;
+    }
+    100% {
+        color: red;
+    }
 }
 
