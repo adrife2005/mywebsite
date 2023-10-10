@@ -12,6 +12,16 @@ body {
     background-color: indigo;
 }
 
+.nav-item a{
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent; 
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #3498db;
+  }
+
 body::before {
     display: block;
     content: '';
@@ -78,4 +88,5 @@ h1 {
         color: red;
     }
 }
+
 
